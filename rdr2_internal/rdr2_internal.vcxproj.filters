@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libs">
+      <UniqueIdentifier>{04179e58-8613-4287-af6e-182d1efc677b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{be4a5cd5-112c-4975-9514-3cd6911e453e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\hooking">
+      <UniqueIdentifier>{9a8d8dd5-da6b-44a2-804e-686f3b4f8df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\hooking\hde">
+      <UniqueIdentifier>{4ac48ed0-e3b5-4cd9-864d-21a74678956b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\invoker">
+      <UniqueIdentifier>{a69e8d10-4d80-4eca-8542-f5e411340373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{55fcf9ea-96f6-4dfb-b363-89b128142955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\features">
+      <UniqueIdentifier>{70d4e1ec-61d7-4233-81da-f5e80f246ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendering">
+      <UniqueIdentifier>{85a0b39b-fa23-4f59-94b3-b945717351c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\features\esp">
+      <UniqueIdentifier>{8bf63077-76c9-4563-aca1-99daab306fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\menu">
+      <UniqueIdentifier>{e4c0fadf-3ddc-45ab-b1d7-a3d15b4cac3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\features\helpers">
+      <UniqueIdentifier>{7c62ea82-19f1-42ca-973b-039d17db4033}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Minhook\src\HDE\hde32.c">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Minhook\src\HDE\hde64.c">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Minhook\src\buffer.c">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Minhook\src\hook.c">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Minhook\src\trampoline.c">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="main\rdr2_main.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="features\esp\esp.cpp">
+      <Filter>Source Files\features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\renderer.cpp">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\menu.cpp">
+      <Filter>Source Files\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="features\features.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\helpers.cpp">
+      <Filter>Source Files\features\helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libs\Minhook\src\HDE\hde32.h">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\HDE\hde64.h">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\HDE\pstdint.h">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\HDE\table32.h">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\HDE\table64.h">
+      <Filter>Source Files\libs\hooking\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\buffer.h">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\src\trampoline.h">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Minhook\include\MinHook.h">
+      <Filter>Source Files\libs\hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="invoker\invoker.hpp">
+      <Filter>Source Files\invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="invoker\natives.hpp">
+      <Filter>Source Files\invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory.hpp">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="main\rdr2_main.hpp">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="features\esp\esp.hpp">
+      <Filter>Source Files\features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\renderer.hpp">
+      <Filter>Source Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\menu.hpp">
+      <Filter>Source Files\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="features\features.hpp">
+      <Filter>Source Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\helpers.hpp">
+      <Filter>Source Files\features\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="invoker\settings.hpp">
+      <Filter>Source Files\invoker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoofer_stub.asm">
+      <Filter>Source Files\memory</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
