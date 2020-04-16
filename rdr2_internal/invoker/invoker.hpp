@@ -64,26 +64,6 @@ struct vector_3_aligned
 		auto delta = vector_3_aligned(this->x - othervec.x, this->y - othervec.y, this->z - othervec.z);
 		return sqrtf(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
 	}
-
-	__forceinline vector_3_aligned Retarded() const
-	{
-		return vector_3_aligned(x, z, y);
-	}
-
-	__forceinline vector_3_aligned SwapXY() const
-	{
-		return vector_3_aligned(y, x, z);
-	}
-
-	__forceinline vector_3_aligned SwapXZ() const
-	{
-		return vector_3_aligned(z, y, x);
-	}
-
-	__forceinline vector_3_aligned SwapYZ() const
-	{
-		return vector_3_aligned(x, z, y);
-	}
 };
 
 struct Vector3
